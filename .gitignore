@@ -1,0 +1,11 @@
+__pycache__/
+*.pyc
+.venv/
+.ipynb_checkpoints/
+.pytest_cache/
+# large / generated artefacts
+data/*.csv
+data/*.db
+models/
+reports/flagged_transactions.csv
+reports/scored_test_set.csv

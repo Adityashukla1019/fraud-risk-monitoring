@@ -1,0 +1,30 @@
+{
+  "train_rows": 420277,
+  "test_rows": 179723,
+  "test_fraud_rate": 0.00411,
+  "models": [
+    {
+      "model": "Logistic Regression",
+      "pr_auc": 0.4351,
+      "roc_auc": 0.9879,
+      "recall_at_90_precision": 0.0393,
+      "threshold_at_90_precision": 0.9993044432576111,
+      "recall_at_50_precision": 0.4201,
+      "fraud_captured_in_top_1pct": 0.6789
+    },
+    {
+      "model": "XGBoost",
+      "pr_auc": 0.4779,
+      "roc_auc": 0.9892,
+      "recall_at_90_precision": 0.0352,
+      "threshold_at_90_precision": 0.9844893217086792,
+      "recall_at_50_precision": 0.4715,
+      "fraud_captured_in_top_1pct": 0.6924
+    }
+  ],
+  "legacy_rule": {
+    "model": "Legacy rule (TRANSFER > 200K)",
+    "recall": 0.0962,
+    "precision": 0.1715
+  }
+}
